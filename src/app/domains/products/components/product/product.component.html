@@ -1,0 +1,39 @@
+<!--
+<div>
+    <img [src]="img" alt="image">
+    <h3>{{title}}</h3>
+    <p>{{price}}</p>
+    <button (click)="addToCartHandler()" >Add to cart</button>
+</div>
+
+
+<div class="mt-6 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 
+dark:border-gray-700">
+    <a href="#" class="w-full overflow-hidden rounded-t-lg bg-gray-200">
+        <img [src]="img" [alt]="title" class="h-full w-full object-cover rounded-lg object-center group-hover:opacity-75">
+    </a>
+    <div class="flex flex-col space-y-2 p-4">
+        <span class="text-lg text-white">{{ title }}</span>
+        <div class="flex items-center justify-between">
+            <span class="text-3xl font-bold text-gray-900 dark:text-white">${{price}}</span>
+            <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none 
+                        focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 
+                        dark:hover:bg-blue-700 dark:focus:ring-blue-800" (click)="addToCartHandler()">
+                Add to cart
+            </a>
+        </div>
+    </div>
+</div>
+-->
+
+<div class="group rounded-1g border">
+    <a href="#" class="w-full overflow-hidden rounded-t-1g bg-gray-200">
+        <img [src]="img" [alt]="title" class="h-full w-full object-cover object-center group-hover:opacity-75">
+    </a>
+    <div class="flex flex-col space-y-2 p-4">
+        <h3 class="text-sm text-gray-700">{{ title }}</h3>
+        <p class="text-lg font-medium text-gray-900">{{price}}</p>
+        <button class="text-black bg-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 w-full"
+        (click)="addToCartHandler()">Add to cart</button>
+    </div>
+</div>
