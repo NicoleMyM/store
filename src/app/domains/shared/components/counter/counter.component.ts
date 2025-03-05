@@ -1,11 +1,11 @@
 import { Component, Input, SimpleChanges, signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { repeat } from 'rxjs';
 
 @Component({
   selector: 'app-counter',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './counter.component.html',
   styleUrls: ['./counter.component.css']
 })
